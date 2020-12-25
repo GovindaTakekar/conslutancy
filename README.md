@@ -1,1 +1,1 @@
-# conslutancy
+# consultancy

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Registration Form Using Bootstrap 4</title>
+</head>
+<body style="background-image: url(images/form-img.png);">
+
+    <section id="navigation">
+        <nav class="navbar navbar-expand-lg bg-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img src="images/Untitled.png" alt="" width="70" height="50" class="d-inline-block align-top">
+            </a>
+            
+            <button class="nav-item navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fas fa-sliders-h"></i>
+              <span class=" navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="about-us.html">about</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link  active" href="contact.html">contact Us</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    more
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+  
+    </section>
+
+    <div class="container-fluid">
+        <form>
+            <img class="form-img" src="images/form-img.png" alt="">
+            <h2 class="text-center">Join Our Network</h2>
+        <div class="forms row ">
+            <div class="col-sm-6 form-group">
+                <label for="name-f">First Name</label>
+                <input type="text" class="form-control" name="fname" id="name-f" placeholder="Enter your first name." required>
+            </div>
+            <div class="col-sm-6 form-group">
+                <label for="name-l">Last name</label>
+                <input type="text" class="form-control" name="lname" id="name-l" placeholder="Enter your last name." required>
+            </div>
+            <div class="col-sm-6 form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" name="email" id="email" placeholder="Enter your email." required>
+            </div>
+            <div class="col-sm-6 form-group">
+                <label for="address-1">Address Line-1</label>
+                <input type="address" class="form-control" name="Locality" id="address-1" placeholder="Locality/House/Street no." required>
+            </div>
+            <div class="col-sm-6 form-group">
+                <label for="address-2">Address Line-2</label>
+                <input type="address" class="form-control" name="address" id="address-2" placeholder="Village/City Name." required>
+            </div>
+            <div class="col-sm-4 form-group">
+                <label for="State">State</label>
+                <input type="address" class="form-control" name="State" id="State" placeholder="Enter your state name." required>
+            </div>
+            <div class="col-sm-2 form-group">
+                <label  for="zip">Postal-Code</label>
+                <input type="zip" class="form-control" name="Zip" id="zip" placeholder="Postal-Code." required>
+            </div>
+            <div class="col-sm-6 form-group">
+                <label for="Country">Country</label>
+                <select class="form-control custom-select browser-default">
+                    <option value="India">India</option>
+                    <option value="USA">USA</option>
+                    <option value="UK">UK</option>
+                </select>
+            </div>
+            <div class="col-sm-6 form-group">
+                <label for="Date">Date Of Birth</label>
+                <input type="Date" name="dob" class="form-control" id="Date" placeholder="" required>
+            </div>
+            <div class="col-sm-6 form-group">
+                <label for="sex">Gender</label>
+                <select id="sex" class="form-control browser-default custom-select">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">other</option>
+            </select>
+            </div>
+            <div class="col-sm-2 form-group">
+                <label for="cod">Country code</label>
+                <select class="form-control browser-default custom-select">
+                    <option data-countryCode="US" value="1" selected>USA (+1)</option>
+  <option data-countryCode="GB" value="44">UK (+44)</option>
+  <option data-countryCode="GB" value="91">India (+91)</option>
+                </select>
+            </div>
+            <div class="col-sm-4 form-group">
+                <label for="tel">Phone</label>
+                <input type="tel" name="phone" class="form-control" id="tel" placeholder="Enter Your Contact Number." required>
+            </div>
+            <div class="col-sm-6 form-group">
+                <label for="pass">Password</label>
+                <input type="Password" name="password" class="form-control" id="pass" placeholder="Enter your password." required>
+            </div>
+            <div class="col-sm-6 form-group">
+                <label for="pass2">Confirm Password</label>
+                <input type="Password" name="cnf-password" class="form-control" id="pass2" placeholder="Re-enter your password." required>
+            </div>
+            <div class="col-sm-12">
+                <input type="checkbox" class="form-check d-inline" id="chb" required><label for="chb" class="form-check-label">&nbsp;I accept all terms and conditions.
+                </label>
+            </div>
+
+            <div class="col-sm-12 form-group mb-0">
+               <button class="btn btn-primary float-right">Submit</button>
+            </div>
+            
+        </div>
+        </form>
+    </div>
+
+    <footer class="mainfooter" role="contentinfo">
+      <div class="footer-middle">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-6">
+            <!--Column1-->
+            <div class="footer-pad">
+              <h2 class="footer-head">Help</h2>
+              <ul class="list-unstyled">
+                
+                <li class="list-items"><a href="#">Payment Center</a></li>
+                <li class="list-items"><a href="contact.html">Forms</a></li>
+                <li class="list-items"><a href="#">FAQs</a></li>
+              </ul>
+            </div>
+          </div>
+      
+          <div class="col-md-3 col-sm-6">
+            <!--Column1-->
+            <div class="footer-pad">
+              <h2 class="footer-head">Categories</h2>
+              <ul class="list">
+                <li class="list-items"><a href="#">Career at GSVT</a></li>
+                <li class="list-items"><a href="contact.html">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <h2 class="footer-head">Follow Us</h2>
+                <ul class="social-network social-circle">
+                 <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                 <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                 <li><a href="#" class="iconInsta" title="Linkedin"><i class="fab fa-instagram"></i></a></li>
+                 
+                </ul>	
+                      
+        </div>
+        </div>
+    
+        <p class="copy">Copyright 2018 - Company Name.  All rights reserved.</p>
+        
+    
+      </div>
+      </div>
+    </footer>
+
+
+</body>
+<script src="https://kit.fontawesome.com/13338ca275.js" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/13338ca275.js" crossorigin="anonymous"></script>
+</html>
